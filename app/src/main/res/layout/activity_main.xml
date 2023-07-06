@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity"
+        >
+
+    <com.stelladk.arclib.ArcLayout
+        app:ArcRadius="30dp"
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/field"
+        app:TopRightArc="inner"
+        app:TopLeftArc="inner"
+        app:BottomRightArc="inner"
+        app:BottomLeftArc="inner">
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutDescription="@xml/activity_main_xml_constraintlayout3_scene">
+
+            <ImageView
+                android:id="@+id/ball"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ball"
+                tools:ignore="ContentDescription"
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="5dp" />
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    </com.stelladk.arclib.ArcLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+
